@@ -1,0 +1,159 @@
+.select-institution {
+  .connect-tabs {
+    .ant-tabs-ink-bar {
+      border-bottom: none;
+      background: none;
+    }
+
+    .ant-tabs-nav {
+      &-list {
+        width: 100%;
+      }
+
+      &::before {
+        border: none;
+      }
+    }
+
+    .ant-tabs-tab {
+      min-width: 9.8rem;
+      padding: 10px 0;
+      width: 50%;
+      border-bottom: 1.5px solid rgba(0, 0, 0, 0.15);
+
+      &-active {
+        transition: border 0.5s;
+        border-bottom: 1.5px solid white;
+      }
+
+      +.ant-tabs-tab {
+        margin: 0;
+      }
+
+      &-btn {
+        margin: 0 auto;
+        padding: 0 30px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .bank-list {
+    scroll-padding-top: 25rem;
+    box-sizing: border-box;
+    border-image: initial;
+    border-radius: 10px;
+  }
+
+  .bank-list::-webkit-scrollbar {
+    display: block;
+    width: 20px;
+    height: 142px;
+  }
+
+  .bank-list::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .bank-list::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #d1d6de;
+    opacity: 0.8;
+    border: 7px solid transparent;
+    background-clip: content-box;
+  }
+
+  .connect-list {
+    .ant-list {
+      &-item {
+        justify-content: flex-start;
+        padding-left: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.1);
+          cursor: pointer;
+        }
+
+        &:last-child {
+          border-bottom: none;
+          padding-bottom: 4rem;
+        }
+
+        &:first-child {
+          padding-top: 1rem;
+        }
+
+        &-meta {
+          flex: 0;
+        }
+      }
+    }
+  }
+
+  .connect-auth-list {
+    .ant-list {
+      &-item {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.05);
+          border-radius: 10px;
+          cursor: pointer;
+        }
+
+        &-meta {
+          &-title {
+            margin-bottom: 0;
+          }
+
+          &-avatar {
+            align-self: center;
+          }
+
+          &-description {
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .search-input {
+    appearance: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0.5rem 0.75rem;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 5px;
+    background: rgba(255, 255, 255, 0.1);
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.1);
+    border-image: initial;
+    border-radius: 10px;
+  }
+}
+
+.ant-drawer-body {
+  &::-webkit-scrollbar {
+    display: block;
+    width: 20px;
+    height: 142px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #d1d6de;
+    opacity: 0.8;
+    border: 7px solid transparent;
+    background-clip: content-box;
+  }
+}

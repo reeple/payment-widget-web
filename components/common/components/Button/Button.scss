@@ -1,0 +1,20 @@
+.finver-btn {
+  &.ant-btn {
+    &.ant-btn-primary {
+      background-color: white;
+      color: $primary-color;
+      border: unset;
+
+      &:disabled {
+        background-color: #c4c4c4;
+        color: white;
+      }
+    }
+  }
+
+  &.finver-link-button-underline {
+    span {
+      text-decoration: underline;
+    }
+  }
+}
